@@ -1,0 +1,272 @@
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: black;
+    letter-spacing: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    color: black;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+
+h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1rem;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.school {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #537188;
+}
+
+.container {
+    width: 60%;
+}
+
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 5px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.hero-extra {
+    text-align: right;
+    align-self: end;
+}
+
+#profile-img {
+    height: 175px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.centerer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+hr {
+    border: 4px solid #537188;
+    background-color: #537188;
+    border-radius: 3px;
+}
+
+#skills {
+    background-color: #eeeeee;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brown-backdrop {
+    background-color: #cbb279;
+    display: inline-block;
+}
+
+.brown-backdrop * {
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.skills-title {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.skills-software {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5vh;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.lower {
+    grid-column: span 4;
+}
+
+.logo img {
+    height: 100px;
+}
+
+span {
+    color: #537188;
+    font-family: "Montserrat", snas-serif;
+    font-weight: 600;
+}
+
+.education-container {
+    margin-bottom: 3vh;
+}
+
+#interests {
+    background-color: #eeeeee;
+}
+
+.interests-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    border: 5px solid #cbb279;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 47%;
+}
+
+.card-text {
+    width: 90%;
+}
+
+.card-text p {
+    margin-top: 0px;
+    font-size: 1.3rem;
+}
+
+.chess-img {
+    height: auto;
+    max-width: 90%;
+    margin: 10px;
+    border: 4px solid black;
+}
+
+.flex-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+a {
+    color: black;
+    font-size: 20pt;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 85%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    h6 {
+        font-size: .7rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .card-text p {
+        font-size: 0.6rem;
+    }
+
+    .chess-img {
+        max-width: 70%;
+    }
+
+    hr {
+        border-width: 2px;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    #profile-img {
+        height: 100px;
+    }
+}

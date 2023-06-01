@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Ferguson</title>
+    
+    <!-- Stylesheets -->
+    <link href="./styles.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <!-- Montserrat (300, 500), IMB Plex Serif (400 italic, 500) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,500;1,400&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <!-- 
+        font-family: 'IBM Plex Serif', serif;
+        font-family: 'Montserrat', sans-serif; 
+    
+        h1 is Montserrat 300 (Main title)
+        h2 is IBM Plex Serif 500 (Section heading)
+        h3 is IBM Plex Serif 400 Italic (Hero subheading)
+        h4 is Montserrat 500 (Section subheading)
+        h5 is Montserrat 300 but smol (School headings)
+        h6 is Montserrat 300 but teeny (School dates)
+
+        p is Montserrat 300 (Body text)
+
+        span is styled inline or as classes (School names)
+    -->
+</head>
+
+<body>
+    <section id="hero">
+        <!-- 
+            The section is laid out with grid, each
+            portion of the grid is a flexbox. Whole 
+            section inside a flexbox to remain centered
+        -->
+        <div class="centerer">
+            <div class="hero-container container">
+                <div class="hero-intro">
+                    <h1>Jack Fergusson</h1>
+                    <h3>Software Developer</h3>
+                    <img src="./photos/IMG_1879.jpeg" id="profile-img" alt="Jack Fergusson with his girlfriend">
+                </div>
+                <div class="hero-extra">
+                    <p>
+                        He/Him<br>
+                        June 20, 2003<br>
+                        Toronto, Canada<br>
+                    </p>
+                </div>
+                <div class="hero-break">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <!-- 
+            Currently done using grid and some
+            fancy math, but should definitely just be 
+            implemented with flexbox. My bad lol 
+        -->
+        <div class="centerer">
+            <div class="skills-container container">
+                <div class="skills-title brown-backdrop">
+                    <h2 style="text-transform: uppercase;">Skills</h2>
+                </div>
+                <div class="skills-software top">
+                    <div class="logo">
+                        <img src="./photos/Logos/python.png" alt="python logo">
+                    </div>
+                    <div class="logo">
+                        <img src="./photos/Logos/java.png" alt="python logo">
+                    </div>
+                    <div class="logo">
+                        <img src="./photos/Logos/c.png" alt="python logo">
+                    </div>
+                    <div class="logo">
+                        <img src="./photos/Logos/arduino.png" alt="python logo">
+                    </div>
+                </div>
+                <div class="skills-software bottom">
+                    <div class="logo lower">
+                        <img src="./photos/Logos/html.png" alt="python logo">
+                    </div>
+                    <div class="logo lower">
+                        <img src="./photos/Logos/css-logo.png" alt="python logo">
+                    </div>
+                    <div class="logo lower">
+                        <img src="./photos/Logos/JavaScript.png" alt="python logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="education">
+        <!-- 
+            No fancy layout mechanisms, just good old
+            fashioned divs. Justified using flex though.
+         -->
+        <div class="centerer">
+            <div class="education-container container">
+                <div id="education-title">
+                    <h2 style="letter-spacing: 1px;">Education</h2>
+                </div>
+                <div id="education-queens">
+                    <h5><span>Queen's University </span> - Computer Engineering</h5>
+                    <h6>September 2021 - Present</h6>
+                    <p>
+                        Learning the intermediate concepts of software development, 
+                        hardware applications, and mathematics through project-based learning.
+                    </p>
+                </div>
+                <div id="education-port-credit">
+                    <h5><span>Port Credit High School </span> - Science & Technology</h5>
+                    <h6>September 2017 - June 2021</h6>
+                    <p>
+                        Was introduced to the theory and application of science, software, 
+                        and technology at large.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="interests">
+        <!-- 
+            Flexbox to justify the two cards, regular
+            content within the cards.
+         -->
+        <div class="centerer">
+            <h2 style="margin-bottom: 0px;">My Interests</h2>
+            <div class="interests-container container">
+                <div class="card chess" style="text-align: justify;">
+                    <img class="chess-img" src="./photos/chess.jpeg" alt="Jack playing chess">
+                    <div class="card-text">
+                        <p>
+                            <span style="font-weight: bold; color: black">Chess<br></span>
+                            I have been playing and enjoying chess 
+                            for many years, becoming the Vice 
+                            President of the Queen's University
+                            Chess Club. I love the game's 
+                            competitiveness and flair!
+                        </p>
+                    </div>
+                </div>  
+                <div class="card chess" style="text-align: justify;">
+                    <img class="chess-img" src="./photos/IMG_2089.JPEG" alt="Jack playing chess">
+                    <div class="card-text">
+                        <p>
+                            <span style="font-weight: bold; color: black">Music<br></span>
+                            Music has always brought me a lot of joy, I have always
+                            enjoyed listening to music as well as playing it. I have been in
+                            multiple school bands as a drummer and guitarist, such as 
+                            orchestra and jazz.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="centerer">
+            <div class="container">
+                <div class="flex-links">
+                    <div>
+                        <a href="https://www.instagram.com/jack.fergusson/">Instagram</a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/jack-fergusson">GitHub</a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/JFdoodle">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
